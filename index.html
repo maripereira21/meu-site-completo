@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AniManga Hub - O seu portal de notícias, recomendações e curiosidades sobre animes e mangás.">
+  <title>AniManga Hub | Início</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Cabeçalho e Menu de Navegação -->
+  <header class="header">
+    <div class="logo">
+      <h1>AniManga <span>Hub</span></h1>
+    </div>
+    <nav aria-label="Navegação Principal">
+      <ul class="nav-list">
+        <li><a href="index.html" class="active" aria-current="page">Início</a></li>
+        <li><a href="sobre.html">Sobre & Catálogo</a></li>
+        <li class="nav-dropdown">
+          <a href="produtos.html">Produtos</a>
+          <ul class="dropdown-menu">
+            <li><a href="produtos.html#mangas">Mangás</a></li>
+            <li><a href="produtos.html#camisetas">Camisetas</a></li>
+            <li><a href="produtos.html#acessorios">Acessórios</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner Hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-content">
+      <h2 id="hero-title">Explore o Universo dos Animes e Mangás</h2>
+      <p>Descubra os lançamentos mais populares, resenhas detalhadas e as melhores recomendações da cultura pop japonesa.</p>
+      <a href="sobre.html" class="btn-primary">Ver Catálogo</a>
+    </div>
+  </section>
+
+  <main>
+    <!-- Seção de Destaques da Temporada -->
+    <section class="container section-padding" aria-labelledby="destaques-title">
+      <h2 id="destaques-title" class="section-title">Destaques da Temporada</h2>
+      
+      <div class="card-grid">
+        <article class="card">
+          <img src="img/10-melhores-animes-shonen-desde-2016.avif" alt="Ilustração estilizada no estilo anime mostrando uma paisagem urbana noturna iluminada por luzes de neon.">
+          <div class="card-body">
+            <span class="badge">Shonen</span>
+            <h3>Ação e Aventura</h3>
+            <p>Conheça as obras mais aclamadas cheias de batalhas épicas, superação e amizade verdadeira.</p>
+            <a href="sobre.html" class="link-more">Saiba mais <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/Yu-Yu-Hakusho-Animes-antigos.jpg" alt="Desenho detalhado de páginas abertas de um mangá japonês em preto e branco.">
+          <div class="card-body">
+            <span class="badge">Classicos</span>
+            <h3>Mangás Inesquecíveis</h3>
+            <p>Uma seleção especial das artes em preto e branco que revolucionaram o quadrinho mundial.</p>
+            <a href="sobre.html" class="link-more">Saiba mais <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/kaiju-no-8-anime.avif" alt="Luzes abstratas e futuristas representando cenários de animes de ficção científica e cyber-punk.">
+          <div class="card-body">
+            <span class="badge">Sci-Fi</span>
+            <h3>Ficção & Cyberpunk</h3>
+            <p>Histórias envolventes sobre futuro, tecnologia e mistérios psicológicos instigantes.</p>
+            <a href="sobre.html" class="link-more">Saiba mais <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Lista de Links Úteis -->
+    <section class="container section-padding bg-alt" aria-labelledby="recursos-title">
+      <h2 id="recursos-title" class="section-title">Plataformas Recomendadas</h2>
+      <ul class="list-links">
+        <li><a href="https://www.crunchyroll.com" target="_blank" rel="noopener noreferrer">Crunchyroll - Streaming Oficial de Animes</a></li>
+        <li><a href="https://myanimelist.net" target="_blank" rel="noopener noreferrer">MyAnimeList - Maior Banco de Dados de Animes e Mangás</a></li>
+        <li><a href="https://mangaplus.shueisha.co.jp" target="_blank" rel="noopener noreferrer">Manga Plus - Leitura Oficial de Mangás Online</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>Feito por Mariana &middot; Projeto Front end &middot; 2DAT2</p>
+  </footer>
+
+</body>
+</html>

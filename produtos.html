@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore as categorias de produtos da AniManga Hub: mangás, camisetas e acessórios.">
+  <title>AniManga Hub | Produtos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <h1>AniManga <span>Hub</span></h1>
+    </div>
+    <nav aria-label="Navegação Principal">
+      <ul class="nav-list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre & Catálogo</a></li>
+        <li class="nav-dropdown">
+          <a href="produtos.html" class="active" aria-current="page">Produtos</a>
+          <ul class="dropdown-menu">
+            <li><a href="#mangas">Mangás</a></li>
+            <li><a href="#camisetas">Camisetas</a></li>
+            <li><a href="#acessorios">Acessórios</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container section-padding">
+    <section class="cart-panel" aria-labelledby="cart-title">
+      <h2 id="cart-title" class="section-title">Seu carrinho <span id="cart-count" aria-live="polite">(0 itens)</span></h2>
+      <p id="cart-empty">Seu carrinho está vazio.</p>
+      <ul id="cart-items" class="cart-items" aria-label="Itens no carrinho"></ul>
+      <p class="cart-total">Subtotal: <strong id="cart-total">R$ 0,00</strong></p>
+    </section>
+
+    <section id="mangas" aria-labelledby="mangas-title">
+      <h2 id="mangas-title" class="section-title">Mangás</h2>
+      <p class="catalog-note">Adicione seus mangás favoritos ao carrinho. Preços ilustrativos.</p>
+      <div class="card-grid store-grid">
+        <article class="card store-product" data-product-id="demon-slayer" data-price="3990">
+          <img src="mangás/16494642256250d3a140a63_1649464225_3x4_md.jpg" alt="Capa do mangá Demon Slayer: Kimetsu no Yaiba, volume 1.">
+          <div class="card-body">
+            <h3>Demon Slayer: Kimetsu no Yaiba — Vol. 1</h3>
+            <p class="manga-price">R$ 39,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+        <article class="card store-product" data-product-id="my-hero-academia" data-price="3990">
+          <img src="mangás/715BlNAXJfL._AC_UF1000,1000_QL80_.jpg" alt="Capa do mangá My Hero Academia, volume 2.">
+          <div class="card-body">
+            <h3>My Hero Academia — Vol. 2</h3>
+            <p class="manga-price">R$ 39,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+        <article class="card store-product" data-product-id="one-piece" data-price="3990">
+          <img src="mangás/716EGgqzyOL.jpg" alt="Capa do mangá One Piece, volume 1.">
+          <div class="card-body">
+            <h3>One Piece — Vol. 1</h3>
+            <p class="manga-price">R$ 39,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+        <article class="card store-product" data-product-id="dragon-ball" data-price="3490">
+          <img src="mangás/dragon-ball-640w.webp" alt="Capa do mangá Dragon Ball, volume 1.">
+          <div class="card-body">
+            <h3>Dragon Ball — Vol. 1</h3>
+            <p class="manga-price">R$ 34,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+        <article class="card store-product" data-product-id="black-clover" data-price="3990">
+          <img src="mangás/unicor-panini-manga-livro-black-clover-01.webp" alt="Capa do mangá Black Clover, volume 1.">
+          <div class="card-body">
+            <h3>Black Clover — Vol. 1</h3>
+            <p class="manga-price">R$ 39,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+        <article class="card store-product" data-product-id="hikaru-morreu" data-price="4490">
+          <img src="mangás/WhatsApp-Image-2023-05-02-at-09.03.43.jpeg" alt="Capa do mangá O Verão em que Hikaru Morreu, volume 1.">
+          <div class="card-body">
+            <h3>O Verão em que Hikaru Morreu — Vol. 1</h3>
+            <p class="manga-price">R$ 44,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="product-categories" id="camisetas" aria-labelledby="camisetas-title">
+      <h2 id="camisetas-title" class="section-title">Camisetas</h2>
+      <p class="catalog-note">Modelos e preços ilustrativos.</p>
+      <div class="card-grid store-grid">
+        <article class="card store-product" data-product-id="camiseta-dandadan" data-price="6990">
+          <img src="camisetas/4-50abb8125690e4b85517910486334602-1024-1024.webp" alt="Camiseta preta com estampa de personagem de anime.">
+          <div class="card-body">
+            <h3>Camiseta Diario de uma Apotecária</h3>
+            <p class="manga-price">R$ 69,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+        <article class="card store-product" data-product-id="camiseta-jujutsu" data-price="6990">
+          <img src="camisetas/51Xx2kpnCEL._AC_SY1000_.jpg" alt="Camiseta branca com estampa em estilo mangá e anime.">
+          <div class="card-body">
+            <h3>Camiseta Jujutsu Kaisen</h3>
+            <p class="manga-price">R$ 69,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+        <article class="card store-product" data-product-id="camiseta-killua" data-price="6990">
+          <img src="camisetas/68a9198a-f711-47e0-8d71-f875afb68e79.jpg" alt="Camiseta preta estampada com Killua, de Hunter x Hunter.">
+          <div class="card-body">
+            <h3>Camiseta Killua — Hunter x Hunter</h3>
+            <p class="manga-price">R$ 69,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+        <article class="card store-product" data-product-id="camiseta-itachi" data-price="6990">
+          <img src="camisetas/c1b9e6675da2425fdec78f71b729b285.jpeg" alt="Camiseta branca estampada com Itachi, de Naruto.">
+          <div class="card-body">
+            <h3>Camiseta Itachi — Naruto</h3>
+            <p class="manga-price">R$ 69,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+        <article class="card store-product" data-product-id="camiseta-one-piece" data-price="7490">
+          <img src="camisetas/camiseta_one_piece_piticas_2839_1_70ee7b307f0d154387c2908d2a194f62.webp" alt="Camiseta cinza com personagens de One Piece.">
+          <div class="card-body">
+            <h3>Camiseta One Piece</h3>
+            <p class="manga-price">R$ 74,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+        <article class="card store-product" data-product-id="camiseta-naruto" data-price="6990">
+          <img src="camisetas/naruto-close-38bd8bf7c53f369c4317793815071785-1024-1024.webp" alt="Camiseta amarela com estampa do Naruto.">
+          <div class="card-body">
+            <h3>Camiseta Naruto</h3>
+            <p class="manga-price">R$ 69,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="product-categories" id="acessorios" aria-labelledby="acessorios-title">
+      <h2 id="acessorios-title" class="section-title">Acessórios</h2>
+      <p class="catalog-note">Acessórios inspirados em animes. Preços ilustrativos.</p>
+      <div class="card-grid store-grid">
+        <article class="card store-product" data-product-id="chaveiros-anime" data-price="1990">
+          <img src="acessórios/681f2e5440855a66ef98d34ff81306198cad3438.jpeg" alt="Coleção de chaveiros com personagens de animes.">
+          <div class="card-body">
+            <h3>Chaveiros de Anime</h3>
+            <p class="manga-price">R$ 19,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+        <article class="card store-product" data-product-id="broches-spy-family" data-price="2490">
+          <img src="acessórios/71dFxxrLV6L._AC_UF894,1000_QL80_.jpg" alt="Conjunto de broches ilustrados com personagens de Spy x Family.">
+          <div class="card-body">
+            <h3>Broches Spy x Family</h3>
+            <p class="manga-price">R$ 24,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+        <article class="card store-product" data-product-id="kunai-naruto" data-price="2990">
+          <img src="acessórios/8c676f4bc4604915c4d3435ddcddf8e4.jpg" alt="Chaveiro em formato de kunai inspirado em Naruto.">
+          <div class="card-body">
+            <h3>Chaveiro Kunai — Naruto</h3>
+            <p class="manga-price">R$ 29,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+        <article class="card store-product" data-product-id="colar-pikachu" data-price="3490">
+          <img src="acessórios/D_Q_NP_2X_601956-MLB107893492146_032026-T--colar-pikachu-regulavel-pokemon-ash-game-anime-geek-nerd.webp" alt="Colar preto com pingente amarelo do Pikachu, de Pokémon.">
+          <div class="card-body">
+            <h3>Colar Pikachu — Pokémon</h3>
+            <p class="manga-price">R$ 34,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+        <article class="card store-product" data-product-id="brincos-demon-slayer" data-price="2990">
+          <img src="acessórios/par_de_brincos_demon_slayer_anime_cosplay_2747_1_914e91e448814e29dfb26b11933a4a41.webp" alt="Par de brincos inspirados em Demon Slayer.">
+          <div class="card-body">
+            <h3>Brincos — Demon Slayer</h3>
+            <p class="manga-price">R$ 29,90</p>
+            <button type="button" class="btn-primary buy-button">Adicionar ao carrinho</button>
+            <p class="buy-feedback" aria-live="polite"></p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Feito por Mariana &middot; Projeto Front end &middot; 2dAT2</p>
+  </footer>
+
+</body>
+</html>

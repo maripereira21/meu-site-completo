@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a AniManga Hub para enviar sugestões de animes e mangás.">
+  <title>AniManga Hub | Contato</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <h1>AniManga <span>Hub</span></h1>
+    </div>
+    <nav aria-label="Navegação Principal">
+      <ul class="nav-list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre &amp; Catálogo</a></li>
+        <li class="nav-dropdown">
+          <a href="produtos.html">Produtos</a>
+          <ul class="dropdown-menu">
+            <li><a href="produtos.html#mangas">Mangás</a></li>
+            <li><a href="produtos.html#camisetas">Camisetas</a></li>
+            <li><a href="produtos.html#acessorios">Acessórios</a></li>
+          </ul>
+        </li>
+        <li><a href="contato.html" class="active" aria-current="page">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container section-padding">
+    <section aria-labelledby="form-title" class="form-wrapper">
+      <h2 id="form-title" class="section-title">Fale com a AniManga Hub</h2>
+      <p class="form-desc">Envie uma sugestão de anime ou mangá, ou deixe seu feedback sobre o site.</p>
+
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="nome">Nome completo *</label>
+          <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Ex.: Maria Silva" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail *</label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="Ex.: maria@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="genero">Gênero de anime ou mangá favorito</label>
+          <select id="genero" name="genero">
+            <option value="">Selecione um gênero</option>
+            <option value="acao-aventura">Ação e aventura</option>
+            <option value="fantasia">Fantasia</option>
+            <option value="romance">Romance</option>
+            <option value="ficcao-cientifica">Ficção científica</option>
+            <option value="drama">Drama</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Sugestão ou mensagem *</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte qual anime ou mangá você recomenda e por quê." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary btn-submit">Enviar mensagem</button>
+        <p class="contact-feedback" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Feito por Mariana &middot; Projeto Front end &middot; 2dAT2</p>
+  </footer>
+
+</body>
+</html>
